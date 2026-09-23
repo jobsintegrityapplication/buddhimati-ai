@@ -1,0 +1,55 @@
+<header class="site-header">
+  <a class="brand" href="#top" aria-label="BuddhiMati AI home">
+    <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><b></b><em></em></span>
+    <span>Buddhimati</span>
+  </a>
+  <nav class="desktop-nav" aria-label="Primary">
+    <a href="#solutions">Solutions</a><a href="#case-studies">Case Studies</a><a href="#about">About</a>
+  </nav>
+  <button class="demo-btn" (click)="scrollTo('contact')">Request a Demo <span>↗</span></button>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="hero-glow glow-a"></div><div class="hero-glow glow-b"></div>
+  <div class="hero-copy">
+    <div class="eyebrow"><span class="pulse"></span> ENTERPRISE AI · BUILT FOR PRODUCTION</div>
+    <h1>Intelligence<br><span>rooted in wisdom.</span></h1>
+    <p>We build practical AI systems that turn complex enterprise data and workflows into measurable business outcomes.</p>
+    <div class="hero-actions"><button class="demo-btn large" (click)="scrollTo('contact')">Request a Demo <span>↗</span></button><a class="text-link" href="#solutions">Explore solutions <span>→</span></a></div>
+  </div>
+  <div class="hero-visual" aria-label="Abstract AI network">
+    <div class="orb orb-one"></div><div class="orb orb-two"></div>
+    <div class="network"><span></span><span></span><span></span><span></span><span></span><span></span><i></i><i></i><i></i></div>
+    <div class="visual-label">BUDDHIMATI / AI SYSTEMS</div>
+  </div>
+</section>
+
+<section class="principles section-shell">
+  <div class="section-kicker">01 / OUR APPROACH</div>
+  <div class="principles-grid">
+    <article *ngFor="let p of principles" class="principle-card" [class.cyan]="p.accent==='cyan'"><div class="top-line"></div><h2>{{p.title}}</h2><p>{{p.text}}</p></article>
+  </div>
+</section>
+
+<section id="solutions" class="solutions section-shell">
+  <div class="section-heading"><div><div class="section-kicker">02 / SOLUTIONS</div><h2>AI that works<br><span>inside the business.</span></h2></div><p>From knowledge retrieval to autonomous workflows, we engineer systems around the way your teams actually operate.</p></div>
+  <div class="solution-grid"><article *ngFor="let s of solutions" class="solution-card"><span>{{s.n}}</span><h3>{{s.title}}</h3><p>{{s.text}}</p><b>Explore <i>→</i></b></article></div>
+</section>
+
+<section class="architecture section-shell">
+ <div class="section-kicker">03 / SYSTEMS</div><div class="arch-heading"><h2>From data to<br><span>decisions.</span></h2><p>Composable AI architecture that connects enterprise knowledge, models, tools and people without turning your stack into a black box.</p></div>
+ <div class="arch"><div class="arch-node">Enterprise data</div><div class="connector"></div><div class="arch-node">Knowledge + RAG</div><div class="connector"></div><div class="arch-node active">AI orchestration</div><div class="connector"></div><div class="arch-node">Tools + APIs</div><div class="connector"></div><div class="arch-node">Business outcome</div></div>
+</section>
+
+<section id="case-studies" class="case-studies section-shell">
+ <div class="section-heading"><div><div class="section-kicker">04 / CASE STUDIES</div><h2>Representative<br><span>use cases.</span></h2></div><p>Built for high-value workflows where trustworthy automation matters.</p></div>
+ <div class="case-grid"><article><small>CASE 01</small><h3>Enterprise document intelligence</h3><p>Secure RAG over financial and operational knowledge with grounded responses and access controls.</p><a href="#contact">Discuss a similar system →</a></article><article><small>CASE 02</small><h3>Intelligent operations</h3><p>Predictive analytics and AI-assisted workflows for inventory, forecasting and operational decisions.</p><a href="#contact">Discuss a similar system →</a></article></div>
+</section>
+
+<section id="about" class="about section-shell"><div class="about-copy"><div class="section-kicker">05 / ABOUT</div><h2>BuddhiMati<br><span>AI Technologies.</span></h2><p>We make advanced AI practical, secure and useful for enterprises. Our work combines machine learning, generative AI, data engineering and software delivery.</p></div><div class="about-values"><div><b>01</b><span>Innovation</span></div><div><b>02</b><span>Trust</span></div><div><b>03</b><span>Security</span></div><div><b>04</b><span>Engineering excellence</span></div></div></section>
+
+<section id="contact" class="contact section-shell"><div class="contact-card"><div><div class="section-kicker">06 / CONTACT</div><h2>Build something<br><span>intelligent.</span></h2><p>Tell us what you are trying to solve. We will start with the problem, not the technology.</p></div><div class="contact-side"><a href="mailto:info@buddhimati.com">info@buddhimati.com</a><button class="demo-btn large" (click)="scrollTo('top')">Back to top ↑</button></div></div></section>
+</main>
+
+<footer><div class="brand"><span class="brand-mark small" aria-hidden="true"><i></i><i></i><i></i><b></b><em></em></span><span>Buddhimati</span></div><p>Intelligence rooted in wisdom.</p><a href="mailto:info@buddhimati.com">info@buddhimati.com</a><span>© 2026 BuddhiMati AI Technologies</span></footer>
